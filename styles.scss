@@ -195,6 +195,8 @@ body {
     }
     &__advices {
     }
+    &__about {
+    }
 }
 /*Main_block*/
 .main-block {
@@ -555,6 +557,130 @@ body {
         padding: 40px 0px 40px 0px;
     }
 }
+
+/*about*/
+.about {
+    padding: 80px 0px 130px 0px;
+
+    &__container {
+        
+    }
+
+
+    &__header {
+        margin: 0px 0px 100px 0px;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: row;
+        align-items:flex-start;
+    }
+
+    &__video {
+        flex: 0 0 57%;
+        position: relative;
+        padding: 0px 0px 42.25% 0px;
+        
+    }
+    &__video iframe{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit:cover;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1 1 auto;
+        padding: 0px 0px 0px 121px;
+    }
+
+
+    &__title {
+        text-align: start;
+        padding: 20px 0px 50px 0px; 
+    }
+
+
+    &__text {
+
+    }
+
+    &__items {
+        
+    }
+
+    &__item:last-child{
+        padding: 30px 0px 0px 0px;
+    }
+    @media(max-width:1080px){
+        &__content{
+            padding: 0px 0px 0px 50px;
+        }
+    }
+}
+@media(max-width:950px){
+    .about{
+        padding: 50px 0px 50px 0px;
+        &__body{
+            flex-direction: column-reverse;
+            align-items:stretch;
+        }
+        &__header { 
+            margin: 0px 0px 30px 0px;
+        }
+        &__content{
+            padding: 0px 0px 0px 0px;
+        }
+        &__video:not(:last-child){
+            margin: 50px 0px 0px 0px;
+        }
+        &__video{
+            padding: 0px 0px 56.25% 0px;
+        }
+
+    }
+}
+
+
+.item-about {
+    display: flex;
+    &__icon {
+        flex: 0 0 32px;
+    }
+
+    &__body {
+        flex: 1 1 auto;
+        margin:0px 0px 0px 20px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.1px;
+        color: #252B42;
+    }
+
+    &__subtitle {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 171%;
+        letter-spacing: 0.2px;
+        color: #737373;
+        margin: 5px 0px 0px 0px;
+        white-space: nowrap;
+        width: 225px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
 
 /*Footer*/
 .footer{
