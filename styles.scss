@@ -66,7 +66,7 @@ body {
         object-fit: cover;
     }
 }
-/*Header-block*/
+/*--------------------------------------------------------HEADER-BLOCK-----------------------------------------------------------------------------------------------------------------------*/
 .header-block {
     text-align: center;
     letter-spacing: 0.2px;
@@ -94,7 +94,7 @@ body {
         }
     }
 }
-/*Header*/
+/*--------------------------------------------------------HEADER-----------------------------------------------------------------------------------------------------------------------*/
 .header {
 
     position: absolute;
@@ -151,7 +151,7 @@ body {
         }
     }
 }
-/*Menu*/
+/*--------------------------------------------------------MENU-----------------------------------------------------------------------------------------------------------------------*/
 .menu {
 
     &__list {
@@ -180,7 +180,7 @@ body {
         }
     }
 }
-/*Page*/
+/*--------------------------------------------------------PAGE-----------------------------------------------------------------------------------------------------------------------*/
 .page {
     flex: 1 1 auto;
     &__main-block {
@@ -197,8 +197,16 @@ body {
     }
     &__about {
     }
+    &__clients:not(:last-child) {
+        margin: 0px 0px 10px 0px;
+    }
+    &__subscribe {
+
+    }
+    &__getintouch {
+    }
 }
-/*Main_block*/
+/*--------------------------------------------------------MAIN BLOCK-----------------------------------------------------------------------------------------------------------------------*/
 .main-block {
     position: relative;
     &__container {
@@ -304,7 +312,7 @@ body {
         }   
     }
 }
-/*Services*/
+/*--------------------------------------------------------SERVICES-----------------------------------------------------------------------------------------------------------------------*/
 .services {
     &__container {
     }
@@ -384,7 +392,7 @@ body {
     margin: 0px 0px 10px 0px;
 }
 
-/*Advantages*/
+/*--------------------------------------------------------ADVANTAGES-----------------------------------------------------------------------------------------------------------------------*/
 .advantages {
     padding: 80px 0;
     &__container {
@@ -465,7 +473,7 @@ body {
         padding: 30px 0;
     }
 }
-/*Advices*/
+/*--------------------------------------------------------ADVICES-----------------------------------------------------------------------------------------------------------------------*/
 .advices {
     padding: 80px 0px 80px 0px;
     
@@ -558,10 +566,10 @@ body {
     }
 }
 
-/*about*/
+/*--------------------------------------------------------ABOUT-----------------------------------------------------------------------------------------------------------------------*/
 .about {
     padding: 80px 0px 130px 0px;
-
+    background:#FFFFFF;
     &__container {
         
     }
@@ -681,8 +689,169 @@ body {
     }
 }
 
+/*--------------------------------------------------------CLIENTS-----------------------------------------------------------------------------------------------------------------------*/
 
-/*Footer*/
+.clients {
+    padding: 50px 0;
+@media(max-width:767px){
+    padding: 30px 0;
+}
+    &__container {
+    }
+
+    &__items {
+        display: flex;
+        align-items:center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__items img{
+        max-width: 100%;
+    }
+
+    &__item {
+        padding: 8px 0px;
+        flex: 0 1 16.6667%;
+        text-align: center;
+        min-width:140px;
+    }
+}
+/*--------------------------------------------------------SUBSCRIBE-----------------------------------------------------------------------------------------------------------------------*/
+.subscribe {
+    position: relative;
+    padding: 0px 0px 20px 0px;
+
+    &__container {
+    }
+
+    &__body {
+        position: relative;
+        z-index: 2;
+        padding:30px 50px;
+        align-items: center;
+        background-color:#17213C;
+        border-radius:2px;
+    }
+
+    @media(min-width: 1070px){
+        &__body{
+            margin:0px 30px;
+        }
+    }
+
+
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 133%;
+        letter-spacing: 0.1px;
+        color:#FFFFFF;
+    }
+    @media(max-width: 810px){
+        &__title{
+            margin: 0px 0px 20px 0px;
+        }
+        &__body{
+            margin: 0px -15px;
+            padding: 20px 15px;
+        }
+    }
+    @media(min-width: 810px){
+        &__body{
+            display: flex;
+            justify-content: space-between;
+        }
+        &__title{
+            max-width:266px;
+        }
+
+    }
+
+    &__form {
+        flex: 0 1 50%;
+        display: flex;
+        align-items:center;
+    }
+
+    &__input {
+        flex: 1 1 auto;
+        min-height: 58px;
+        padding: 20px;
+        background:#F9F9F9;
+        color:#737373;
+        border: 1px solid #e6e6e6;
+        box-sizing:border-box;
+        border-radius: 5px 0 0 5px;
+        border-right:0;
+        width: 100%;
+    }
+    &__input:focus {
+        color:#000;
+    }
+
+
+    &__button {
+        background: #FF7B47;
+        border: 1px solid #E6E6E6;
+        border-radius: 0px 5px 5px 0px;
+        display: flex;
+        min-height: 58px;
+        justify-content: center;
+        align-items:center;
+        text-align: center;
+        color:#fff;
+        padding: 0px 22px;
+    }
+    @media(max-width: 810px){
+        &__button {
+            padding: 0px 15px;
+        }
+    }
+}
+.subscribe::before {
+    content:"";
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    height: 77px;
+    left:0;
+    background: #252b42;
+}
+/*--------------------------------------------------------GETINTOUCH-----------------------------------------------------------------------------------------------------------------------*/
+.getintouch {
+
+    &__container {
+    }
+
+    &__header {
+    }
+
+    &__items {
+    }
+
+    &__item {
+    }
+}
+
+
+.item-getintouch {
+
+    &__icon {
+    }
+
+    &__emails {
+    }
+
+    &__email {
+    }
+
+    &__label {
+    }
+
+    &__button {
+    }
+}
+/*--------------------------------------------------------FOOTER-----------------------------------------------------------------------------------------------------------------------*/
 .footer{
 
 }
