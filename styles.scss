@@ -820,37 +820,127 @@ body {
 /*--------------------------------------------------------GETINTOUCH-----------------------------------------------------------------------------------------------------------------------*/
 .getintouch {
 
+    padding : 80px 0px 135px 0px;
     &__container {
     }
 
     &__header {
+        margin:0px 0px 80px 0px;
+    }
+    &__items {
+    margin: 0px -15px;
     }
 
-    &__items {
+    @media (min-width:992px) {
+        &__items {
+            display: flex;
+            align-items:center;
+            max-height: 393px;
+            margin:0;
+        }
+    }
+
+    @media (max-width:992px) {
+        padding : 50px 0px;
+        &__header {
+            margin:30px 0px 50px 0px;
+        }
+    }
+
+    @media (max-width:767px) {
+        padding : 30px 0px ;
+        
+    .item-getintouch_active{
+        padding: 50px 15px ;
+    }
+        &__header {
+            margin:20px 0px 30px 0px;
+        }
     }
 
     &__item {
+        flex: 0 1 33.333%;
     }
 }
-
-
 .item-getintouch {
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-color:#FFF;
+    padding: 50px 15px;
+    max-height: 333px;
     &__icon {
     }
 
     &__emails {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
     }
 
     &__email {
+        color:inherit;
+        font-weight: 600;
+        line-height: 150%;
+        font-size: 16px;
+
+    }
+    &__email:hover {
+        text-decoration: underline;
     }
 
     &__label {
+        font-size: 16px;
+        line-height: 150%;
+        font-weight: 700;
     }
 
     &__button {
+        border:1px solid #FF7B47;
+        max-height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        text-align: center;
+        border-radius: 5px;
+        line-height: 142;
+        padding: 5px 20px ;
+        font-weight: 600;
+        transition: all 0.3s ease 0s;
+        color:inherit;
+    }
+    &__button:hover {
+        background-color:#FF7B47;
+        color: #fff;
+    }
+
+    &_active {
+        background: #252b42;
+        color:#fff;
+        padding: 80px 15px ;
+        max-height: 393px;
+
+        .item-getintouch__button{
+            border: 1px solid #fff;
+            color:#fff;
+        }
+
     }
 }
+
+@media (max-width:767px) {
+    .item-getintouch_active{
+        padding: 50px 15px;
+    }
+}
+.item-getintouch > *:not(:last-child) {
+    margin:0px 0px 15px 0px;
+}
+
+
+
 /*--------------------------------------------------------FOOTER-----------------------------------------------------------------------------------------------------------------------*/
 .footer{
 
