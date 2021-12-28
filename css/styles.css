@@ -905,6 +905,16 @@ body {
   text-align: center;
   color: #fff;
   padding: 0px 22px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 200%;
+  letter-spacing: 0.2px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.subscribe__button:hover {
+  color: #252b42;
 }
 
 @media (max-width: 810px) {
@@ -1078,4 +1088,275 @@ body {
 }
 
 /*--------------------------------------------------------FOOTER-----------------------------------------------------------------------------------------------------------------------*/
+.footer__contactus {
+  background-color: #ffffff;
+  padding: 0px 195px;
+}
+
+.footer__navigation {
+  background-color: #17213C;
+  padding: 0px 195px;
+}
+
+.contactus__content {
+  padding: 40px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contactus__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contactus__title {
+  padding: 0px 0px 10px 0px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133.3333%;
+  letter-spacing: 0.1px;
+}
+
+.contactus__subtitle {
+  font-size: 14px;
+  line-height: 143%;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+
+.contactus__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px 40px;
+  background: #FF7B47;
+  border-radius: 5px;
+  color: #FFF;
+  max-height: 58px;
+  max-width: 212px;
+  height: 100%;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 200%;
+  letter-spacing: 0.2px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.contactus__button:hover {
+  color: #17213C;
+}
+
+.navigation__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 50px 0px;
+  color: #FFFFFF;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 1025px) {
+  .footer__navigation {
+    padding: 0px 80px;
+  }
+  .footer__contactus {
+    padding: 0px 80px;
+  }
+}
+
+@media (max-width: 701px) {
+  .footer__navigation {
+    padding: 0px 40px;
+  }
+  .footer__contactus {
+    padding: 0px 40px;
+  }
+}
+
+@media (max-width: 670px) {
+  .footer__navigation {
+    padding: 0px 40px;
+  }
+  .footer__contactus {
+    padding: 0px 40px;
+  }
+  .contactus__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactus__subtitle {
+    padding: 0px 0px 20px 0px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .contactus__button {
+    max-width: 280px;
+    width: 100%;
+  }
+  .contactus__content > * {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+  .navigation__body {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 10px 0px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .navigation__body > * {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+    padding: 20px 0px 10px 0px;
+  }
+  .navigation__body .item__title {
+    padding: 0px 0px 10px 0px;
+    margin: 0px 0px 0px 0px;
+  }
+  .navigation__body .item__body {
+    margin: 0px 0px 0px 0px;
+  }
+}
+
+@media (max-width: 477px) {
+  .footer__navigation {
+    padding: 0px 20px;
+  }
+  .footer__contactus {
+    padding: 0px 20px;
+  }
+  .contactus__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactus__subtitle {
+    padding: 0px 0px 10px 0px;
+  }
+  .contactus__button {
+    max-width: 280px;
+    width: 100%;
+  }
+  .contactus__content > * {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+  .navigation__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10px 0px;
+  }
+  .navigation__body > * {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    padding: 20px 0px 10px 0px;
+  }
+  .navigation__body > :first-child {
+    padding: 0px 0px 10px 0px;
+  }
+  .navigation__body .item__title {
+    padding: 0px 0px 10px 0px;
+    margin: 0px 0px 0px 0px;
+  }
+  .navigation__body .item__body {
+    margin: 0px 0px 0px 0px;
+  }
+}
+
+.item__title {
+  padding: 0px 0px 20px 0px;
+  margin: 0px 30px 0px 0px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.1px;
+}
+
+.item__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0px 30px 0px 0px;
+  font-size: 14px;
+  line-height: 170%;
+  letter-spacing: 0.2px;
+}
+
+.item__body > *:not(:last-child) {
+  padding: 0px 0px 10px 0px;
+}
+
+.item__link {
+  color: #fff;
+}
+
+.item__link:hover {
+  text-decoration: underline;
+}
+
+.item__getintouch img {
+  margin: 0px 10px 0px 0px;
+}
 /*# sourceMappingURL=styles.css.map */
