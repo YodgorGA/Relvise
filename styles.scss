@@ -276,14 +276,23 @@ body {
         line-height: 150%;
         padding: 5px 36px;
         margin: 10px 0;
+        transition: all 0.3s ease 0s;
         &_orange{
             background: #ff7b47;
             color: #fff;
         }
+        &_orange:hover{
+            color: rgb(0, 0, 0);
+        }
 
         &_border {
             color: #0d5c63;
-            border: 1px solid #0d5c63;
+            border: 1px solid #0d5c63; 
+        }
+        &_border:hover {
+            border: 1px solid #ff7b47;
+            background: #ff7b47;
+            color: #ffffff;
         }
     }
     @media (max-width:479px){
